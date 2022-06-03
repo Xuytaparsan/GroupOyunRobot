@@ -19,7 +19,7 @@ const createGameState = chatId => {
 }
 const getGreetMessage = isGroup =>
 	trueTrim(`
-	👋 Salam. Mən @AzeSohbetGurupu üçün yaradılmış, Yaş təxmin Oyun Botuyam.🤖
+	👋 Salam. Mən @CrazyTeam_s üçün yaradılmış, Yaş təxmin Oyun Botuyam.🤖
 
 	📋 Qaydalar: Mən sizə bir şəxsin şəklini atıram və sizin vəzifəniz onun yaşını təxmin etməkdir.  Nə qədər dəqiq cavab versəniz, bir o qədər xal qazanacaqsınız.⭐
 	
@@ -32,8 +32,8 @@ const getGreetMessage = isGroup =>
 	/top - 🔝 Qrup Oyunçu Xalları
 	/chart - 🌎 Qlobal Reyting
 	
-	🧑‍💻 Owner: @Vusaliww 🇦🇿
-🇦🇿 Rəsmi Qrup: @AzeSohbetGurupu
+	🧑‍💻 Owner: @Dakanca_Hozu 🇦🇿
+🇦🇿 Rəsmi Qrup: @CrazyTeam_s
 `)
 const getRandomPerson = () => {
 	let imagePath = "./photos"
@@ -105,7 +105,7 @@ const stopGame = (ctx, chatId) => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "⚡xal", "⚡xal", "⚡xal")}`)
 						.join("\n")}
 
-					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @AzeSohbetGurupu
+					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @CrazyTeam_s
 					🔄 /game - Bir daha?
 				`)
 			)
@@ -114,7 +114,7 @@ const stopGame = (ctx, chatId) => {
 				trueTrim(`
 					*🏁 Oyun Oynamadığınız Üçün Qalib Yoxdur. .*
 
-					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @AzeSohbetGurupu
+					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @CrazyTeam_s
 					🔄 /game - Bir daha?
 				`)
 			)
@@ -314,7 +314,7 @@ bot.command("top", ctx => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "⚡xal", "⚡xal", "⚡xal")}`)
 						.join("\n")}
 
-					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @AzeSohbetGurupu
+					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @CrazyTeam_s
 					🔄 /game - Bir daha?
 				`)
 				)
