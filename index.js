@@ -19,7 +19,7 @@ const createGameState = chatId => {
 }
 const getGreetMessage = isGroup =>
 	trueTrim(`
-	👋 Salam. Mən @BanditosQrup üçün yaradılmış, Yaş təxmin Oyun Botuyam.🤖
+	👋 Salam. Mən @AzeSohbetGurupu üçün yaradılmış, Yaş təxmin Oyun Botuyam.🤖
 
 	📋 Qaydalar: Mən sizə bir şəxsin şəklini atıram və sizin vəzifəniz onun yaşını təxmin etməkdir.  Nə qədər dəqiq cavab versəniz, bir o qədər xal qazanacaqsınız.⭐
 	
@@ -32,8 +32,8 @@ const getGreetMessage = isGroup =>
 	/top - 🔝 Qrup Oyunçu Xalları
 	/chart - 🌎 Qlobal Reyting
 	
-	🧑‍💻 Owner: @HusuSovetski 🇦🇿
-🇦🇿 Rəsmi Qrup: @BanditosQrup
+	🧑‍💻 Owner: @Vusaliww 🇦🇿
+🇦🇿 Rəsmi Qrup: @AzeSohbetGurupu
 `)
 const getRandomPerson = () => {
 	let imagePath = "./photos"
@@ -105,7 +105,7 @@ const stopGame = (ctx, chatId) => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "⚡xal", "⚡xal", "⚡xal")}`)
 						.join("\n")}
 
-					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @Banditosqrup
+					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @AzeSohbetGurupu
 					🔄 /game - Bir daha?
 				`)
 			)
@@ -114,7 +114,7 @@ const stopGame = (ctx, chatId) => {
 				trueTrim(`
 					*🏁 Oyun Oynamadığınız Üçün Qalib Yoxdur. .*
 
-					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @Banditosqrup
+					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @AzeSohbetGurupu
 					🔄 /game - Bir daha?
 				`)
 			)
@@ -280,7 +280,7 @@ bot.command("stop", ctx => {
 bot.command("alive", ctx => {
 	return ctx.replyWithMarkdown(
 		trueTrim(`
-  Mən İşləyirəm Botda Yaşanacaq Hadisəni Sahibimə Bildirin. @HusuSovetski
+  Mən İşləyirəm Botda Yaşanacaq Hadisəni Sahibimə Bildirin. @Vusaliww
 		`)
 	)
 })
@@ -314,7 +314,7 @@ bot.command("top", ctx => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "⚡xal", "⚡xal", "⚡xal")}`)
 						.join("\n")}
 
-					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @Banditosqrup
+					❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @AzeSohbetGurupu
 					🔄 /game - Bir daha?
 				`)
 				)
@@ -376,7 +376,7 @@ bot.command("chart", ctx => {
 
 			${topSlice.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${fromId === member.id ? "Sənin Xal: " : ""}${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "⚡xal", "⚡xal", "⚡xal")}`).join("\n")}
 			${currentUser ? `...\n🔸 ${currentUser.index + 1}. ${bold(currentUser.firstName)}: ${numberWithSpaces(currentUser.score)} ${pluralize(currentUser.score, "⚡xal", "⚡xal", "⚡xal")}\n` : ""}
-			❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @Banditosqrup
+			❤️ Botun Rəsmi Qrupuna qatılmağı Unutmayaq. @AzeSohbetGurupu
 			🔄 /game - Bir daha?
 		`)
 		)
